@@ -1,0 +1,33 @@
+<div class="container portafolio p-4">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <span><i class="fas fa-briefcase folio"></i></span>
+        </div>
+        <div class="col-12 text-center display-4">
+            <p>Portafolio</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        
+        <div class="col-10 outset-1 col-sm-6 col-md-3 p-2" *ngFor="let item of arr">           
+            
+                <div class="card carta d-flex justify-content-center">
+                    <div class="card-body">
+                      <p class="card-text text-center h5">{{ item.titulo }}</p>
+                    </div>
+                    <img [src]="item.imagen" alt="Card image" class="img-fluid fotos d-flex justify-content-center">
+                    <div class="card-body tec text-center">
+                        <div class="card-text text-center ">
+                            <span class="h6">TECNOLOGIAS</span> <br> 
+                            <li>{{ item.tecnologias }}</li>
+                            
+                        </div>
+                        <a [href]="item.enlace" target="_blank" class="btn btn-primary boton">Ver</a>
+                    </div>
+                  </div>
+
+        </div>
+
+    </div>
+</div>

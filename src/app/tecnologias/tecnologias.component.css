@@ -1,0 +1,13 @@
+.tecnologias{
+    margin-top: 40px;
+}
+
+.apt{
+    color: rgba(49, 49, 49, 0.877);
+}
+
+.apt:hover{
+    color: #28a745;
+    cursor: pointer;
+    transform: scale(1.2);
+}
